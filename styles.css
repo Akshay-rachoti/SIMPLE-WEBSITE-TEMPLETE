@@ -1,0 +1,151 @@
+* {
+  margin: 00;
+  padding: 00;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  line-height: 2.6;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  padding: 15px;
+}
+
+nav img {
+  max-width: 100px;
+}
+
+nav .menu {
+  display: flex;
+}
+
+nav .menu ul {
+  display: flex;
+  list-style: none;
+}
+
+nav .menu ul li {
+  margin: 0 10px;
+}
+
+nav .menu ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+nav .menu ul li a:hover {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+  nav .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    display: none;
+  }
+
+  nav .menu.active {
+    display: flex;
+  }
+
+  nav .menu ul li {
+    margin: 10px 0;
+  }
+}
+
+.section {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+.title { font-size: 30px; margin-left: 15px; }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.content {
+  min-height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.copyright {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+background-video {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  filter: brightness(30%);
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.bg-image {
+  width: 50%;
+  height: 100vh;
+  background: url("https://unsplash.com/photos/selective-focus-photography-of-woman-holding-yellow-petaled-flowers-ktPKyUs3Qjs");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.container {
+  padding: 100px;
+}
+
+h1 {
+  font-size: 50px;
+}
+p {
+  color: grey;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 10px;
+  }
+}
